@@ -1,0 +1,151 @@
+body {
+    background-color:whitesmoke;
+    color: #333333;
+
+    font: normal Arial, Helvetica, sans-serif;
+    
+    line-height:1.6em;
+    margin:0;
+    min-width: 750px;
+
+}
+
+#main-header{
+    background-color:#333333;
+    color:whitesmoke;
+    font-family:Helvetica;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    vertical-align: middle;
+    font-size:x-large;
+    
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    
+}
+
+#navbar{
+    background-color:#FFFFCC;
+    text-align:right;
+}
+
+#navbar ul{
+    padding:0;
+    list-style:none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    font-size:18px;
+    padding-right:15px;
+}
+
+
+.box-1{
+   
+    background-image:url('images/background.jpg');
+    /*background-repeat: no-repeat;*/
+    
+    object-fit:cover;
+    background-size:100%;
+    overflow: hidden;
+    text-align: center;
+    box-sizing:border-box;
+    
+    
+    padding-top:4.5vw;
+    padding-bottom:4.5vw;
+    max-height:max-content;
+    /*min-width:1000px;*/
+    box-sizing: border-box;
+    vertical-align: middle;
+    /*height:1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    
+
+    /*
+    height: 300px;
+    object-fit:cover;
+    background-size:100%;
+    background-image: url('images/background.jpg');
+    columns: #333333;
+    font-family:Helvetica;
+    text-align: center;
+
+    padding-top:500px;
+    padding-bottom:500px;
+*/
+}
+
+.box-1 h2{
+    font-family:Arial;
+    font-size: xxx-large;
+
+}
+
+.box-1 img {
+    border-radius: 50%;
+    resize: both;
+    outline-color: black;
+    box-shadow: inset;
+    box-sizing: border-box;
+    
+}
+
+.box-1 ul {
+    vertical-align: middle;
+    /*padding-bottom:10%;*/
+    list-style:none;
+}
+
+.box-1 li {
+    padding-bottom: 6vw;
+    margin-bottom:3vw;
+}
+
+.box-1 button{
+    font-size:2vw;
+    padding:10px 24px;
+    background-color: midnightblue;
+    color:whitesmoke;
+    border:2px solid #333;
+    font-family:Helvetica;
+}
+
+.box-1 button:hover{
+    background-color:whitesmoke;
+    border:2px solid #333;
+    color: darkblue;
+}
+
+.box-1 button:active{
+    background-color:transparent;
+}
+
+#foot{
+    text-align: center;
+}
+
+@media(max-width: 1020px){
+    #main-header{
+        font-size:large;
+    }
+
+    .box-1 h2{
+        font-size:xx-large;
+    }
+    .box-1 img{
+        width:15%;
+        height: auto;
+    }
+
+}
