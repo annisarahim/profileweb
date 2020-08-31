@@ -2,7 +2,7 @@ body {
     background-color:#FFFFCC;
     color: #333333;
 
-    font: normal Arial, Helvetica, sans-serif;
+    font-family: normal Helvetica;
     
     line-height:1.6em;
     margin:0;
@@ -21,11 +21,11 @@ body {
     background-color:#333333;
     color:whitesmoke;
     font: normal Helvetica;
-    
     padding-top:1vw;
     padding-bottom:1vw;
     vertical-align: middle;
     font-size:x-large;
+    
 }
 
 /*navbar*/
@@ -40,13 +40,12 @@ body {
 }
 
 #navbar li{
-    display:inline;
+    display:inline;    
 }
 
 #navbar a{
     font-size:x-large;
     padding-right:15px;
-    
 }
 
 #available{
@@ -61,51 +60,60 @@ body {
 
 /*box-1*/
 .box-1{
-    background-image:url('../images/background.jpg');
-    object-fit:cover;
+    font: normal Helvetica;
+    background-image:url('../images/campus.jpg');
     background-size:100%;
     overflow: hidden;
-    text-align:center;
-    
-    padding-top:4.5vw;
-    padding-bottom:4.5vw;
 
-    vertical-align: middle;
+    padding-left:15vw;
+    padding-right:15vw;
+    padding-top:2vw;
+    padding-bottom:5vw;
+
+    text-align: center;
 }
 
 .box-1 h2{
-    font: normal Arial;
-    font-size: xxx-large;
+    font-size: xx-large;
+    padding-bottom:1vw;
+}
+
+.box-1 h3{
+    font-size: x-large;
+    padding-bottom:1vw;
 }
 
 .box-1 img {
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px;
+    width:75%;
+    outline-color: black;
+    vertical-align: center;
+    box-shadow: 10px 10px 5px;
 }
 
-.box-1 ul {
+.row {
+    display:flex;
+    padding-bottom:3vw;
+}
+
+.column{
     vertical-align: middle;
-    list-style:none;
-}
-
-.box-1 li {
-    padding-bottom: 6vw;
-    margin-bottom: 3vw;
+    flex:33.33%;
+    padding-left:0;
+    padding-right: 0;
+    
 }
 
 .box-1 button{
-    font-size:2vw;
+    font-size:1.5em;
     padding:10px 24px;
     background-color: midnightblue;
     color:whitesmoke;
     border:2px solid #333;
-    font-family:Helvetica;
-    box-shadow: 5px 5px 5px #333;
 }
 
 .box-1 button:hover{
     background-color:whitesmoke;
-    border:2px solid midnightblue;
+    border:2px solid #333;
     color: midnightblue;
 }
 
@@ -120,18 +128,34 @@ body {
 
 /*responsive media (below 1020px width)*/
 @media(max-width: 1020px){
+
     #main-header{
         font-size:medium;
     }
+
     #navbar a{
         font-size:large;
     }
-    .box-1 h2{
-        font-size:xx-large;
+
+    .box-1{
+        padding-bottom: 4vw;
     }
-    .box-1 img{
-        width:15%;
-        height: auto;
+
+    .box-1 h2{
+        font-size:x-large;
+        padding-bottom: 0.3vw;
+    }
+
+    .box-1 h3{
+        font-size:large;
+    }
+
+    .box-1 button{
+        font-size:1em;
+    }
+
+    .conditional{
+        display:none;
     }
 
 }

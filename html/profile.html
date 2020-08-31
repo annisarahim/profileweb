@@ -13,8 +13,10 @@
         <nav id="navbar">
             <div class="container">
                 <ul>
-                    <li><a id="home" href="home.html">Home</a></li>
-                    <li><a id="profile" href="#">Profile</a></li>
+                    <li><a id="available" href="home.html">Home</a></li>
+                    <li><a id="currentpage" href="#">Profile</a></li>
+                    <li><a id="available" href="education.html">Education</a></li>
+                    <li><a id="available" href="cats.html">Cats</a></li>
 
                 </ul>
             </div>
@@ -30,7 +32,7 @@
                     <ul>
                         <li>
                             <p>Annisa Rahim<br><br class="conditional">
-                            Student at Institut Technology Bandung<br><br class="conditional">
+                            Student at Institut Teknologi Bandung<br><br class="conditional">
                             Informatics Engineering<br></p>
                         </li>
                         <li>
@@ -41,10 +43,15 @@
                             13518089@std.stei.itb.ac.id<br><br class="conditional">
                             annisarahim21@gmail.com</p>
                         </li>
+                        <p id="sosmed">social media links:<p>
+                        <button id="linkedin" onclick="toLinkedin()" target="_blank">LinkedIn</button>
+                        <button id="medium" onclick="toMedium()" target="_blank">Medium</button>
+                        <button id="instagram" onclick="toInstagram()" target="_blank">Instagram</button>
                     </ul>
                 </div>
             </div>
-            <button onclick="toHome()">Back to Home</button>
+            <button id="homebutton" onclick="toHome()">Back to Home</button>
+            <button id="edbutton" onclick="toEducation()">Education</button>
         </div>
         <script src="./../javascript/script.js"></script>
     </body>

@@ -2,7 +2,7 @@ body {
     background-color:#FFFFCC;
     color: #333333;
 
-    font: normal Arial, Helvetica, sans-serif;
+    font-family: normal Helvetica;
     
     line-height:1.6em;
     margin:0;
@@ -40,7 +40,7 @@ body {
 }
 
 #navbar li{
-    display:inline;
+    display:inline;    
 }
 
 #navbar a{
@@ -60,7 +60,8 @@ body {
 
 /*box-1*/
 .box-1{
-    background-image:url('../images/sunset.jpg');
+    font: normal Helvetica;
+    background-image:url('../images/scenery.jpg');
     background-size:100%;
     overflow: hidden;
 
@@ -70,121 +71,38 @@ body {
     padding-bottom:5vw;
 
     text-align: center;
-
 }
 
 .box-1 h2{
-    font: normal Helvetica;
     font-size: xxx-large;
-    text-align: center;
-    padding-bottom:4vw;
+    padding-bottom:1vw;
+}
+
+.box-1 p{
+    font-size: x-large;
 }
 
 .box-1 img {
-    width:75%;
-    vertical-align: center;
+    width:50%;
+    outline-color: black;
+    vertical-align: middle;
     box-shadow: 10px 10px 5px;
 }
 
 .row {
     display:flex;
     padding-bottom:3vw;
+    align-items: center;
 }
 
 .column{
-    text-align:center;
-    vertical-align: middle;
     flex:50%;
     padding-left:0;
-    padding-right: 0;
+    padding-right:0;
     
 }
 
-.box-1 ul {
-    list-style:none;
-    padding-bottom:3vw;
-    
-}
-
-.box-1 li {
-    margin-bottom:3vw;
-}
-
-.box-1 p{
-    font-size:x-large;
-    padding-bottom:1vw;
-}
-
-/*buttons*/
-#sosmed{
-    padding:0;
-}
-
-#instagram{
-    font-size:1.5vw;
-    padding:5px 12px;
-    background-color: #ff5309;
-    color:whitesmoke;
-    border:2px solid #ff5309;
-    box-shadow: 5px 5px 5px #333;
-}
-
-#instagram:hover{
-    background-color:whitesmoke;
-    border:2px solid #ff5309;
-    color: #ff5309;
-}
-
-#instagram:active{
-    background-color:transparent;
-}
-
-#linkedin{
-    font-size:1.5vw;
-    padding:5px 12px;
-    background-color: #0E76A8;
-    color:whitesmoke;
-    border:2px solid #0E76A8;
-    box-shadow: 5px 5px 5px #333;
-}
-
-#medium:hover{
-    background-color:whitesmoke;
-    border:2px solid black;
-    color: black;
-}
-
-#medium:active{
-    background-color:transparent;
-}
-
-#medium{
-    font-size:1.5vw;
-    padding:5px 12px;
-    background-color: black;
-    color:whitesmoke;
-    border:2px solid black;
-    box-shadow: 5px 5px 5px #333;
-}
-
-#linkedin:hover{
-    background-color:whitesmoke;
-    border:2px solid #0E76A8;
-    color: #0E76A8;
-}
-
-#linkedin:active{
-    background-color:transparent;
-}
-
-#catbutton:hover{
-    background-color:whitesmoke;
-    border:2px solid #333;
-    color: darkblue;
-}
-
-
-#edbutton{
+#catbutton{
     font-size:1.5em;
     padding:10px 24px;
     background-color: midnightblue;
@@ -196,13 +114,13 @@ body {
     color: whitesmoke;
 }
 
-#edbutton:hover{
+#catbutton:hover{
     background-color:whitesmoke;
     border:2px solid #333;
     color: darkblue;
 }
 
-#edbutton:active{
+#catbutton:active{
     background-color:transparent;
 }
 
@@ -233,43 +151,34 @@ body {
 
 /*responsive media (below 1020px width)*/
 @media(max-width: 1020px){
+
     #main-header{
         font-size:medium;
     }
+
     #navbar a{
         font-size:large;
     }
+
+    .box-1{
+        padding-bottom: 4vw;
+    }
+
     .box-1 h2{
         font-size:xx-large;
+        padding-bottom: 0.3vw;
     }
+
     .box-1 p{
-        letter-spacing: normal;
-        font-size:medium;
-        padding-bottom:0.3vw;
+        font-size: large;
     }
+
     .box-1 button{
         font-size:1em;
     }
+
     .conditional{
         display:none;
-    }
-
-    #instagram{
-        font-size:0.7em;
-        padding:4px 10px;
-        box-shadow: 3px 3px 3px #333;
-    }
-    
-    #linkedin{
-        font-size:0.7em;
-        padding:4px 10px;
-        box-shadow: 3px 3px 3px #333;
-    }
-    
-    #medium{
-        font-size:0.7em;
-        padding:4px 10px;
-        box-shadow: 3px 3px 3px #333;
     }
 
     #homebutton{
@@ -277,7 +186,7 @@ body {
         padding:7px 14px;
         box-shadow: 3px 3px 3px #333;
     } 
-    #edbutton{
+    #catbutton{
         font-size:1em;
         padding:7px 14px;
         box-shadow: 3px 3px 3px #333;
