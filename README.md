@@ -11,7 +11,7 @@ Untuk menjalankan program: buka folder html lalu buka home.html pada browser
 ### Project Structure
 images 	   : berisi foto-foto yang dibutuhkan oleh website  
 html	   : berisi empat buah file html: home.html(page utama), profile.html, education.html, dan cats.html  
-css	   : berisi empat buah file css: style.css, style2.css, style3.css , dan style4.css 
+css	   : berisi empat buah file css: style.css, style2.css, style3.css , dan style4.css  
 javascript : berisi satu buah file javascript: script.js    
 
 home.html adalah page utama dari website, menggunakan style.css sebagai file css.  
